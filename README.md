@@ -8,7 +8,7 @@
 2. Скачайте на свой ПК этот git-репозиторий. Исходный код для выполнения задания расположен в директории **01/src**.
 3. Убедитесь, что в вашей ОС установлен docker.
 
-   ![Task](https://https://github.com/nick-mp/terraform-1VM/blob/main/img/0-1.png)
+   ![Task](https://github.com/nick-mp/terraform-1VM/blob/main/img/0-1.png)
 
 
 ### Задание 1
@@ -17,25 +17,25 @@
 2. Изучите файл **.gitignore**. В каком terraform-файле, согласно этому .gitignore, допустимо сохранить личную, секретную информацию?(логины,пароли,ключи,токены итд)
 3. Выполните код проекта. Найдите  в state-файле секретное содержимое созданного ресурса **random_password**, пришлите в качестве ответа конкретный ключ и его значение.
 
-   ![Task](https://https://github.com/nick-mp/terraform-1VM/blob/main/img/1-3.png)
+   ![Task](https://github.com/nick-mp/terraform-1VM/blob/main/img/1-3.png)
 
 4. Раскомментируйте блок кода, примерно расположенный на строчках 29–42 файла **main.tf**.
 Выполните команду ```terraform validate```. Объясните, в чём заключаются намеренно допущенные ошибки. Исправьте их.
 
-   ![Task](https://https://github.com/nick-mp/terraform-1VM/blob/main/img/1-4.png)
+   ![Task](https://github.com/nick-mp/terraform-1VM/blob/main/img/1-4.png)
 
 5. Выполните код. В качестве ответа приложите: исправленный фрагмент кода и вывод команды ```docker ps```.
 
-   ![Task](https://https://github.com/nick-mp/terraform-1VM/blob/main/img/1-5.png)
+   ![Task](https://github.com/nick-mp/terraform-1VM/blob/main/img/1-5.png)
 
 6. Замените имя docker-контейнера в блоке кода на ```hello_world```. Не перепутайте имя контейнера и имя образа. Мы всё ещё продолжаем использовать name = "nginx:latest". Выполните команду ```terraform apply -auto-approve```.
 Объясните своими словами, в чём может быть опасность применения ключа  ```-auto-approve```. Догадайтесь или нагуглите зачем может пригодиться данный ключ? В качестве ответа дополнительно приложите вывод команды ```docker ps```.
 
-   ![Task](https://https://github.com/nick-mp/terraform-1VM/blob/main/img/1-6.png)
+   ![Task](https://github.com/nick-mp/terraform-1VM/blob/main/img/1-6.png)
 
 8. Уничтожьте созданные ресурсы с помощью **terraform**. Убедитесь, что все ресурсы удалены. Приложите содержимое файла **terraform.tfstate**. 
 
-   ![Task](https://https://github.com/nick-mp/terraform-1VM/blob/main/img/1-8.png) 
+   ![Task](https://github.com/nick-mp/terraform-1VM/blob/main/img/1-8.png) 
    ### сразу копию не сделал, скрин сделан после удаления ресурсов 2го задания.
 
 
@@ -67,7 +67,7 @@
 
 ### Ответ: приложен файл resources.tf. Так и не получилось у меня разобраться с remoute docker context, поэтому сделал как умею через terraform.
 
-   ![Task](https://https://github.com/nick-mp/terraform-1VM/blob/main/img/2.png) 
+   ![Task](https://github.com/nick-mp/terraform-1VM/blob/main/img/2.png) 
 
 
 6. Зайдите на вашу ВМ , подключитесь к контейнеру и проверьте наличие секретных env-переменных с помощью команды ```env```. Запишите ваш финальный код в репозиторий.
